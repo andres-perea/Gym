@@ -1,0 +1,196 @@
+/* === Variables === */
+:root {
+    --bg-body: #1f212c;
+    --parimary-color: #2c5bff;
+    --fontSize-title: 40px;
+    --fontSize-parrafo: 20px;
+}
+
+body{
+    background: var(--bg-body);
+}
+
+nav.bg-gym{
+    background: var(--bg-body);
+}
+
+nav .navbar-brand img{
+    width: 200px;
+}
+
+nav.bg-gym ul li a{
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+}
+
+nav.bg-gym ul li a::after{
+    width: 0%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-gym ul li a:hover{
+    color: var(--parimary-color);
+}
+
+nav.bg-gym ul li a:hover::after{
+    background: var(--parimary-color);
+    width: 40%;
+}
+
+nav.bg-gym ul li.login{
+    margin-left: 350px;
+    margin-right: 30px;
+}
+
+nav.bg-gym ul li.registro a{
+    display: block;
+    padding: 12px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fff;
+    background: var(--parimary-color);
+    border-radius: 4px;
+}
+
+/* == Hero == */
+#hero{
+    padding: 160px 0;
+}
+
+#hero .img-foto{
+    position: relative;
+    width: 400px;
+}
+
+#hero .img-foto img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+
+#hero .img-foto::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background: var(--parimary-color);
+    z-index: 1;
+}
+
+#hero .info-hero{
+    padding-left: 60px;
+}
+
+#hero .info-hero h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#hero .info-hero h1 span{
+    border-bottom: 12px #fff solid;
+}
+
+#hero .info-hero p{
+    color: #fff;
+    font-size: var(--fontSize-parrafo);
+    margin-bottom: 70px;
+}
+
+#hero .info-hero .destacada h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+}
+
+#hero .info-hero .destacada p{
+    font-size: 14px;
+}
+
+/* === Clases === */
+#clases{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 50px 0;
+}
+
+#clases h2{
+    font-size: var(--fontSize-title);
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#clases h2::after{
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 52%;
+}
+
+#clases .card-clases{
+    border-radius: 4px;
+    position: relative;
+    margin: 0 10px 0 10px;
+}
+
+#clases .card-clases img{
+    width: 100%;
+}
+
+#clases .card-clases .clases-info{
+    background: #292c36;
+    padding: 14px;
+    transition: .5s;
+    border-radius: 0 0 4px 4px;
+}
+
+#clases .card-clases .clases-info:hover{
+    background: var(--parimary-color);
+}
+.card-clases .clases-info h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-clases .clases-info p{
+    color: #c6c6c6;
+    font-size: 16px;
+}
+
+.slick-arrow{
+    width: 30px;
+    height: 30px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    border: 0px;
+    top: -56px;
+    right: 0;
+}
+
+.slick-prev{
+    right: 40px;
+    background: #fff url("../img/flecha.png");
+    background-size: 100%;
+    transform: rotate(-180deg);
+}
+
+.slick-next{
+    background: #fff url("../img/flecha.png");
+    background-size: 100%;
+}
